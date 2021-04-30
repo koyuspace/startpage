@@ -1,6 +1,6 @@
 body {
-    background: #223;
-    color: #fff;
+    background: #f2f2ff;
+    color: #333;
     text-align: center;
     padding-top: 60px;
     font-size: 11pt;
@@ -8,7 +8,7 @@ body {
 }
 
 input {
-    border: 0;
+    border: 1px solid #ccc;
     background: #fff;
     outline: 0;
     padding: 10px;
@@ -30,7 +30,7 @@ table {
 }
 
 a, a:visited {
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 
@@ -44,9 +44,23 @@ td {
 }
 
 td {
-    color: #ccc;
+    color: #aaa;
 }
 
 #header > td {
     font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #223;
+        color: #fff;
+    }
+    a, a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+    td {
+        color: #ccc;
+    }
 }
